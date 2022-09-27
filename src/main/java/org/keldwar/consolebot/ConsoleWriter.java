@@ -1,7 +1,9 @@
 package org.keldwar.consolebot;
 
 public class ConsoleWriter implements Writer {
-    public void write(String data) {
-        System.out.println(data);
+
+    @Override
+    public void write(StringWrapper data) {
+        System.out.println(data.getString());
     }
 }

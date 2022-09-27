@@ -1,19 +1,21 @@
 package org.keldwar.consolebot;
+
 import java.util.*;
 
 public class ConsoleReader implements Reader {
-    String data;
+    StringWrapper data = new StringWrapper();
+
     @Override
     public void read() {
-       Scanner scanner = new Scanner(System.in);
-       data = scanner.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        data.setString(scanner.nextLine());
     }
 
     //is needed setter??
-    public String getData() {
+    @Override
+    public StringWrapper getData() {
         return data;
     }
-    //transfer to Handler??
 
     public static void main(String[] args) {
         Reader reader = new ConsoleReader();
