@@ -1,7 +1,7 @@
 package org.keldwar.consolebot.writers;
 
-import org.keldwar.consolebot.Response;
+import org.keldwar.consolebot.dto.Response;
 
 public interface Writer {
-    void write(Response data);
+    void write(Response response);
 }

@@ -1,9 +1,9 @@
 package org.keldwar.consolebot.handlers;
 
-import org.keldwar.consolebot.Request;
-import org.keldwar.consolebot.Response;
+import org.keldwar.consolebot.dto.Request;
+import org.keldwar.consolebot.dto.Response;
 
-public class Handler1 implements Handler {
+public class SimpleHandler implements Handler {
     public Response returnResponse(Request request) {
         return new Response(request.data());
     }

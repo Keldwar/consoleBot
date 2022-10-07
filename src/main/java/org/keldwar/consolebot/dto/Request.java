@@ -1,4 +1,4 @@
-package org.keldwar.consolebot;
+package org.keldwar.consolebot.dto;
 
 /*
 public class Wrapper {
